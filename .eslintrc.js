@@ -1,0 +1,96 @@
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+  ],
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
+  },
+  parser: "babel-eslint",
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 10,
+    sourceType: "module",
+  },
+  plugins: ["import", "react", "no-null", "const-case", "prettier"],
+  rules: {
+    "init-declarations": "off",
+    "sort-keys": "off",
+    "sort-imports": "off",
+    "spaced-comment": "off",
+    "max-lines-per-function": "off",
+    "multiline-comment-style": "off",
+    "const-case/uppercase": "error",
+    // TODO: RE-ENABLE NO SHADOW RULE
+    "no-shadow": "off",
+    "no-unused-expressions": ["error", { allowShortCircuit: true }],
+    "no-inner-declarations": "off",
+    "no-use-before-define": ["off"],
+    "no-case-declarations": "off",
+    "no-ternary": "off",
+    "no-alert": "off",
+    "no-undefined": "off",
+    "no-plusplus": "off",
+    "import/no-cycle": ["error", { maxDepth: "∞" }],
+    "no-magic-numbers": ["error", { ignore: [0, 1] }],
+    "no-console": ["warn", { allow: ["error"] }],
+    "no-unused-vars": "warn",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        devDependencies: false,
+        optionalDependencies: false,
+        peerDependencies: false,
+      },
+    ],
+    "react/no-danger": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-curly-newline": "off",
+    "react/prop-types": [0],
+    "react/no-array-index-key": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "react/forbid-prop-types": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        extensions: [".jsx", ".tsx"],
+      },
+    ],
+    radix: "off",
+    "jsx-a11y/no-static-element-interactions": [
+      "error",
+      {
+        handlers: [
+          "onClick",
+          "onMouseDown",
+          "onMouseUp",
+          "onKeyPress",
+          "onKeyDown",
+          "onKeyUp",
+        ],
+      },
+    ],
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
+};
