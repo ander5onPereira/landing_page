@@ -11,11 +11,14 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: #F8FDFF;
+    font-family: "Poppins",sans-serif;
   }
   bottom {
     background-color: none;
     border:none ;
     outline:none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
   }
   a{
     text-decoration:none ;
