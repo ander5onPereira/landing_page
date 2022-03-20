@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-
+import Back1 from "../assets/EllipseBlue1.png";
+import Back2 from "../assets/EllipseBlue2.png";
 const GlobalStyle = createGlobalStyle`
   *{
     padding:0 ;
@@ -11,6 +12,9 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: #F8FDFF;
+    background: url(${Back2}) no-repeat ,url(${Back1}) no-repeat ;
+    background-size: 42%,48%;
+    background-position: top right,top right;
     font-family: "Poppins",sans-serif;
   }
   bottom {

@@ -12,9 +12,9 @@ export const Container = styled.div`
   text-align: left;
   padding: 11px;
   overflow: hidden;
-  animation: showOnActivity 0.5s linear forwards;
+  animation: showOnActivity 1s linear forwards;
   opacity: 0;
-  top: -50px;
+  top: 50px;
 
   small {
     font-size: 15px;
