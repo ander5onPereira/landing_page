@@ -3,17 +3,17 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: absolute;
 
-  left: 30px;
-  width: 210px;
-  height: 210px;
-  border-radius: 18px;
+  left: 2rem;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 1.2rem;
   background-color: var(--white);
-  box-shadow: 0px 17.5px 28px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: 0 1.1rem 1.8rem rgba(0, 0, 0, 0.1);
+  padding: 1.3rem;
 
   animation: showOnChart 1s linear forwards;
   opacity: 0;
-  bottom: -50px;
+  bottom: -3.3rem;
   > div {
     display: flex;
     justify-content: space-between;
@@ -26,12 +26,12 @@ export const Container = styled.div`
   @keyframes showOnChart {
     from {
       opacity: 0;
-      bottom: -50px;
+      bottom: -3.3rem;
     }
 
     to {
       opacity: 1;
-      bottom: 0px;
+      bottom: 0;
     }
   }
 `;
@@ -49,27 +49,27 @@ function generateBars() {
       flex-direction:column;
       div{
         background-color: #eff3fe;
-        height: 91px;
-        width: 2.1px;
-        border-radius: 5px;
+        height: 6rem;
+        width: 0.14rem;
+        border-radius: 0.33rem;
         display: flex;
         justify-content: flex-end;
        
         span{
           background-color: #5236ff;
           display: block;
-          height:0px;
+          height:0;
           max-height: ${rand}px;
-          width: 3.5px;
-          border-radius: 5px;
+          width: 0.23rem;
+          border-radius: 0.3rem;
   
           animation:animationHeight 1s linear forwards;
         }
       }
       small{
         color:#84ccfd;
-        font-size: 10px;
-        margin-top:10px;
+        font-size: 0.7rem;
+        margin-top:0.6rem;
       }
     }
     `);
@@ -78,17 +78,17 @@ function generateBars() {
 }
 
 export const Chart = styled.div`
-  margin-top: 28px;
+  margin-top: 1.8rem;
 
   ${generateBars()}
 
   @keyframes animationHeight {
     from {
-      height: 0px;
+      height: 0;
     }
 
     to {
-      height: 91px;
+      height: 6rem;
     }
   }
 `;

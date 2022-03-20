@@ -5,6 +5,6 @@ export const Container = styled.div`
   position: relative;
   width: 50%;
   img {
-    margin-left: 108px;
+    margin-left: 7.2rem;
   }
 `;

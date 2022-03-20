@@ -2,40 +2,40 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
-  left: 75px;
+  left: 5rem;
   background-color: var(--secundary);
   color: var(--white);
-  width: 154px;
-  height: 77px;
-  border-radius: 12px;
+  width: 10.2rem;
+  height: 5.1rem;
+  border-radius: 0.8rem;
   text-align: left;
-  padding: 11px;
+  padding: 0.7rem;
   overflow: hidden;
   animation: showOnActivity 1s linear forwards;
   opacity: 0;
-  top: 50px;
+  top: 3.3rem;
 
   small {
-    font-size: 15px;
+    font-size: 1rem;
   }
   div {
     display: flex;
     align-items: center;
     span {
-      font-size: 23px;
+      font-size: 2rem;
       font-weight: 400;
-      margin-right: 5px;
+      margin-right: 0.3rem;
     }
   }
   i {
-    width: 154px;
-    height: 77px;
+    width: 10.2rem;
+    height: 5.1rem;
     position: absolute;
-    border-radius: 50px;
+    border-radius: 3.3rem;
 
     &.circle1 {
-      left: 104px;
-      top: -20px;
+      left: 6.9rem;
+      top: -1.3rem;
       background: linear-gradient(
         0deg,
         rgba(255, 255, 255, 0.3),
@@ -48,26 +48,26 @@ export const Container = styled.div`
         rgba(255, 255, 255, 0.3),
         rgba(255, 255, 255, 0.3)
       );
-      left: 81px;
-      bottom: -50px;
+      left: 5.4rem;
+      bottom: -3.3rem;
       transform: rotate(45deg);
     }
     &.circle3 {
-      border: 2px solid rgba(255, 255, 255, 0.3);
+      border: 0.1rem solid rgba(255, 255, 255, 0.3);
       transform: rotate(-72deg);
-      top: -54px;
-      left: 47px;
+      top: -3.6rem;
+      left: 3.1rem;
     }
   }
   @keyframes showOnActivity {
     from {
       opacity: 0;
-      top: -50px;
+      top: -3.3rem;
     }
 
     to {
       opacity: 1;
-      top: 105px;
+      top: 7rem;
     }
   }
 `;

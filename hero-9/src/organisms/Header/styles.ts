@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Box = styled.header`
-  padding-top: 30px;
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
