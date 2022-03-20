@@ -2,6 +2,14 @@ import { createGlobalStyle } from "styled-components";
 import Back1 from "../assets/EllipseBlue1.png";
 import Back2 from "../assets/EllipseBlue2.png";
 const GlobalStyle = createGlobalStyle`
+  :root{
+    --white:#FFFFFF;
+    --background:#F8FDFF;
+    --primary:#17a4d0;
+    --secundary:#daaaff;
+    --darkblue:#1e255e;
+    --gray:#555;
+  }
   *{
     padding:0 ;
     margin:0 ;
@@ -11,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
   }
   body{
-    background-color: #F8FDFF;
+    background-color: var(--background);
     background: url(${Back2}) no-repeat ,url(${Back1}) no-repeat ;
     background-size: 42%,48%;
     background-position: top right,top right;

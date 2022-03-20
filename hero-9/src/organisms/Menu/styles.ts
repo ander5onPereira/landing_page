@@ -10,11 +10,11 @@ export const ItemList = styled.li`
 
   &:hover {
     a {
-      color: #17a4d0;
+      color: var(--primary);
     }
   }
   a {
-    color: #1e255e;
+    color: var(--darkblue);
     transition: color 0.5s ease;
   }
 `;

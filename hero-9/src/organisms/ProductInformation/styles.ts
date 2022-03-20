@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 50%;
   h1 {
-    color: #1e255e;
+    color: var(--darkblue);
     font-size: 56px;
     font-weight: bold;
   }

@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 210px;
   height: 210px;
   border-radius: 18px;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0px 17.5px 28px rgba(0, 0, 0, 0.1);
   padding: 20px;
 
@@ -48,7 +48,6 @@ function generateBars() {
       align-items: center;
       flex-direction:column;
       div{
-
         background-color: #eff3fe;
         height: 91px;
         width: 2.1px;

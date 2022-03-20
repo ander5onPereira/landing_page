@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
-  /* top: 105px; */
   left: 75px;
-  background-color: #daaaff;
-  color: #fff;
+  background-color: var(--secundary);
+  color: var(--white);
   width: 154px;
   height: 77px;
   border-radius: 12px;
