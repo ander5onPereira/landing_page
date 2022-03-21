@@ -30,6 +30,9 @@ const GlobalStyle = createGlobalStyle`
     background-size: 42%,48%;
     background-position: top right,top right;
     font-family: "Poppins",sans-serif;
+    @media (max-width: 720px) {
+       background-size: 80%,90%;
+     }
   }
   bottom {
     background-color: none;

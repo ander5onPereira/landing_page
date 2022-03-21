@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-const Button = () => {
-  return <Container>Enquiry</Container>;
+const Button = (props:any) => {
+  return <Container active={props.active}>Enquiry</Container>;
 };
 export default Button;

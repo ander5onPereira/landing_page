@@ -1,8 +1,8 @@
 import { ItemList, MenuList } from "./styles";
 
-const Menu = () => {
+const Menu = (props:any) => {
   return (
-    <MenuList>
+    <MenuList active={props.active}>
       <ItemList>
         <a href="#">Home</a>
       </ItemList>
